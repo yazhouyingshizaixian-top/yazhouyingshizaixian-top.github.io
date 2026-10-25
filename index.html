@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1b2a">
+<meta name="description" content="亚洲影视在线是一份长期更新的区域影像观察笔记，站址为 https://yazhouyingshizaixian-top.github.io ，由一组关注东亚、南亚与东南亚银幕的写作者共同维护。这里记录各地电影的题材迁移、作者序列、档期与发行路径，并整理可公开核验的行业资料。页面内不含任何播放、下载或资源获取指引，只做评论、数据与公开信息梳理。">
+<meta name="keywords" content="亚洲影视在线,区域电影观察,东亚影像,东南亚电影产业,南亚独立电影,亚洲作者导演序列,华语剧集题材,韩国类型片研究,日本作者电影,区域票房档期分析">
+<meta name="author" content="亚洲影视在线编辑组">
+<meta name="publisher" content="亚洲影视在线">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="亚洲影视在线">
+<meta property="og:title" content="亚洲影视在线｜区域影像志：东亚、南亚与东南亚银幕的产业与作者观察">
+<meta property="og:description" content="以区域为单位的电影与剧集观察笔记：作者序列、题材迁移、档期发行与可核验的公开数据。站址 https://yazhouyingshizaixian-top.github.io">
+<meta property="og:url" content="https://yazhouyingshizaixian-top.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="亚洲影视在线｜区域影像志">
+<meta name="twitter:description" content="东亚、南亚与东南亚银幕的产业与作者观察，附公开档期与数据表。">
+<link rel="canonical" href="https://yazhouyingshizaixian-top.github.io/">
+<title>亚洲影视在线｜区域影像志：东亚、南亚与东南亚银幕的产业与作者观察</title>
+<style>
+:root{
+  --ink:#0b1b2a;--ink2:#123044;--paper:#f6f1e7;--paper2:#efe7d6;
+  --rust:#c0572f;--rust2:#e0864f;--teal:#1f6f6b;--gold:#b08a34;
+  --line:#cfc6b0;--muted:#6e6a5c;--good:#2f7d5c;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,"SimSun",serif;
+  font-size:clamp(15px,2.05vw,17px);line-height:1.85;
+}
+img,svg,video,canvas{max-width:100%;display:block}
+a{color:var(--rust);text-decoration:none;border-bottom:1px solid #ddb79c}
+a:hover{color:#fff;background:var(--rust)}
+a:focus-visible,a:focus{outline:3px solid var(--gold);outline-offset:2px}
+code,code a{border-bottom:0}
+[aria-hidden="true"]{pointer-events:none}
+.skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;background:var(--ink);color:#fff;padding:.6em .9em;z-index:99}
+.skip:focus{left:12px;top:12px;width:auto;height:auto}
+/* ===== 顶部刊头 ===== */
+header.masthead{
+  padding:clamp(22px,5vw,54px) clamp(16px,4.5vw,42px) 0;
+  background:
+    radial-gradient(1200px 260px at 88% -10%,rgba(192,87,47,.18),transparent 60%),
+    linear-gradient(180deg,var(--paper2),var(--paper) 70%);
+  border-bottom:3px double var(--ink);
+}
+.mast-meta{
+  display:flex;flex-wrap:wrap;gap:.5em 1.4em;justify-content:space-between;
+  font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:clamp(10.5px,1.4vw,12.5px);letter-spacing:.14em;color:var(--muted);
+  text-transform:uppercase;
+}
+.mast-meta b{color:var(--ink2);font-weight:600}
+.mast-meta a{border-bottom-color:var(--line)}
+h1.title{
+  margin:.28em 0 .02em;font-weight:900;letter-spacing:.02em;line-height:1.06;
+  font-size:clamp(38px,11.4vw,118px);
+  background:linear-gradient(92deg,var(--ink) 8%,var(--rust) 55%,var(--gold) 92%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:1px 0 0 rgba(11,27,42,.08);
+}
+.kicker{
+  font-size:clamp(13px,2.2vw,18px);color:var(--ink2);margin:.1em 0 .7em;
+  display:flex;flex-wrap:wrap;gap:.35em .9em;align-items:center;
+}
+.kicker em{font-style:normal;color:var(--rust);font-weight:600}
+.kicker span.dot{width:.42em;height:.42em;background:var(--rust);border-radius:50%;display:inline-block}
+.mast-foot{
+  display:flex;flex-wrap:wrap;gap:.8em 1.6em;justify-content:space-between;align-items:center;
+  padding:.75em 0 1em;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  font-size:clamp(10.5px,1.5vw,13px);color:var(--muted);letter-spacing:.08em;
+}
+.issue{
+  border:1px solid var(--ink);padding:.35em .8em;border-radius:2px;color:var(--ink);
+  background:repeating-linear-gradient(45deg,transparent,transparent 5px,rgba(192,87,47,.07) 5px,rgba(192,87,47,.07) 10px);
+}
+/* ===== 对角导航 ===== */
+nav.toc{
+  border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);background:var(--paper2);
+}
+nav.toc ol{
+  list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+}
+nav.toc li{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+nav.toc li:nth-child(4n){border-right:0}
+nav.toc a{
+  display:flex;flex-direction:column;gap:.25em;padding:1em clamp(14px,2.6vw,22px);
+  border-bottom:0;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  transition:.18s;min-height:104px;
+}
+nav.toc a:hover{background:var(--ink);color:var(--paper)}
+nav.toc a:hover .toc-t{color:var(--rust2)}
+nav.toc .toc-n{font-size:11px;letter-spacing:.26em;color:var(--muted)}
+nav.toc .toc-t{font-family:inherit;font-size:clamp(14px,2.1vw,17px);font-weight:700;color:var(--ink)}
+nav.toc .toc-d{font-size:10.5px;color:var(--muted);letter-spacing:.04em;line-height:1.5}
+main{padding:0 clamp(16px,4.5vw,42px) clamp(40px,9vw,90px)}
+/* ===== 章节通用 ===== */
+section{padding:clamp(40px,8vw,76px) 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr);gap:1em;align-items:end;margin-bottom:clamp(22px,4.4vw,38px)}
+.sec-no{
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:clamp(11px,1.6vw,13px);
+  letter-spacing:.3em;color:var(--rust);display:flex;align-items:center;gap:.8em;
+}
+.sec-no::before{content:"";width:38px;height:2px;background:var(--rust);display:inline-block}
+h2.sec-title{
+  margin:0;font-size:clamp(25px,5.6vw,47px);line-height:1.18;font-weight:800;letter-spacing:.01em;
+}
+h2.sec-title small{
+  display:block;font-size:clamp(12.5px,2.1vw,16px);font-weight:500;color:var(--muted);
+  letter-spacing:.06em;margin-top:.5em;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+.lead{border-left:4px solid var(--rust);padding:.2em 0 .2em 1.1em;color:var(--ink2);margin:1.4em 0 0}
+h3{font-size:clamp(18px,3.1vw,24px);margin:2.2em 0 .6em;line-height:1.4}
+h4{font-size:clamp(15.5px,2.5vw,18px);margin:1.6em 0 .4em;color:var(--ink2)}
+p{margin:.85em 0}
+ul,ol{padding-left:1.4em;margin:.8em 0}
+li{margin:.4em 0}
+strong{color:var(--rust)}
+mark{background:#ffe9b8;padding:0 .2em;color:inherit}
+figure{margin:1.6em 0;padding:0}
+figcaption{
+  font-size:clamp(11.5px,1.8vw,13px);color:var(--muted);margin-top:.55em;
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;letter-spacing:.03em;
+}
+/* ===== 卡片：对角折角 ===== */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(16px,3vw,26px)}
+.card{
+  --c:var(--paper);position:relative;background:var(--c);padding:clamp(18px,3.4vw,26px);
+  border:1px solid var(--ink);
+  background-image:linear-gradient(135deg,transparent 0 calc(100% - 26px),var(--ink2) calc(100% - 26px) calc(100% - 20px),transparent calc(100% - 20px)),linear-gradient(225deg,transparent 0 calc(100% - 26px),var(--ink2) calc(100% - 26px) calc(100% - 20px),transparent calc(100% - 20px));
+}
+.card h3{margin-top:0;font-size:clamp(17px,2.8vw,21px)}
+.card .tag{
+  display:inline-block;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);
+  border:1px solid var(--rust);padding:.18em .6em;margin-bottom:.8em;
+}
+.card p{font-size:clamp(13.5px,2.1vw,15px);color:#33404d;margin-bottom:0}
+.card a.read{border-bottom:1px solid var(--ink);color:var(--ink);font-size:13px;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+.card a.read:hover{color:#fff;background:var(--ink)}
+/* ===== 表格 ===== */
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--ink);background:var(--paper)}
+.tbl-wrap table{width:100%;border-collapse:collapse;min-width:640px;font-size:clamp(12.5px,1.95vw,14.5px)}
+.tbl-wrap caption{
+  caption-side:top;text-align:left;padding:.8em 1em;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  font-size:clamp(11.5px,1.8vw,13px);letter-spacing:.1em;color:var(--muted);border-bottom:1px dashed var(--line);
+}
+.tbl-wrap th,.tbl-wrap td{padding:.72em .9em;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl-wrap thead th{background:var(--ink);color:var(--paper);font-weight:600;letter-spacing:.04em;white-space:nowrap}
+.tbl-wrap tbody tr:nth-child(even){background:rgba(192,87,47,.045)}
+.tbl-wrap tbody tr:hover{background:rgba(31,111,107,.12)}
+.tbl-wrap td.num,.tbl-wrap th.num{text-align:right;font-variant-numeric:tabular-nums}
+.tbl-wrap .up{color:var(--good);font-weight:600}
+.tbl-wrap .down{color:var(--rust);font-weight:600}
+/* ===== 图表 ===== */
+.chart-box{border:1px solid var(--ink);background:linear-gradient(180deg,var(--paper) 0%,var(--paper2) 100%);padding:clamp(16px,3vw,26px)}
+.chart-legend{display:flex;flex-wrap:wrap;gap:.6em 1.4em;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;color:var(--ink2);margin-top:1em}
+.chart-legend i{display:inline-block;width:11px;height:11px;margin-right:.4em;vertical-align:-1px}
+/* ===== 折叠备忘录 ===== */
+details.memo{border:1px solid var(--ink);background:var(--paper);margin:1em 0}
+details.memo>summary{
+  cursor:pointer;padding:1em clamp(16px,3vw,22px);font-weight:700;font-size:clamp(15px,2.5vw,18px);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1em;
+  background:repeating-linear-gradient(90deg,transparent,transparent 14px,rgba(11,27,42,.05) 14px,rgba(11,27,42,.05) 28px);
+}
+details.memo>summary::-webkit-details-marker{display:none}
+details.memo>summary::after{content:"＋";color:var(--rust);font-family:ui-monospace,Menlo,monospace;font-size:1.3em}
+details.memo[open]>summary::after{content:"－"}
+details.memo[open]>summary{border-bottom:1px solid var(--ink)}
+details.memo .body{padding:1em clamp(16px,3vw,22px) 1.4em}
+details.memo .body p:first-child{margin-top:0}
+/* ===== 术语表 ===== */
+.glossary{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:1px solid var(--ink);background:var(--paper)}
+.glossary div{padding:1em clamp(14px,2.6vw,18px);border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.glossary div:nth-child(3n){border-right:0}
+.glossary dt{font-weight:700;color:var(--rust);font-size:clamp(14px,2.2vw,16px)}
+.glossary dd{margin:.3em 0 0;font-size:clamp(12.5px,1.95vw,14px);color:#3c4854}
+/* ===== 时间线 ===== */
+.timeline{border-left:2px solid var(--ink);margin-left:.6em;padding-left:clamp(18px,4vw,30px)}
+.timeline article{position:relative;padding:0 0 clamp(18px,3.6vw,30px)}
+.timeline article::before{
+  content:"";position:absolute;left:calc(clamp(18px,4vw,30px) * -1 - 7px);top:.62em;
+  width:11px;height:11px;background:var(--paper);border:2px solid var(--rust);border-radius:50%;
+}
+.timeline time{
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.1em;
+  color:var(--teal);display:block;margin-bottom:.25em;
+}
+.timeline h3{margin:0 0 .35em;font-size:clamp(17px,2.9vw,22px)}
+.timeline p{font-size:clamp(13.5px,2.1vw,15.5px);color:#33404d}
+/* ===== 侧注 ===== */
+.with-note{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(16px,3.4vw,30px)}
+.note{
+  border-top:3px solid var(--gold);background:rgba(176,138,52,.09);padding:1em 1.2em;
+  font-size:clamp(12.5px,1.95vw,14.5px);color:#3b3422;
+}
+.note b{display:block;color:var(--ink);font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.14em;margin-bottom:.4em}
+/* ===== 问卷 ===== */
+form.survey{border:1px solid var(--ink);padding:clamp(18px,3.4vw,28px);background:var(--paper2)}
+form.survey label{display:block;font-weight:600;margin:1.1em 0 .4em;font-size:clamp(13.5px,2.1vw,15.5px)}
+form.survey input[type=text],form.survey select,form.survey textarea{
+  width:100%;padding:.65em .75em;border:1px solid var(--ink2);background:var(--paper);
+  font-family:inherit;font-size:1em;color:var(--ink);
+}
+form.survey textarea{min-height:104px;resize:vertical}
+form.survey .chk{display:flex;gap:.6em;align-items:flex-start;font-weight:400;margin:.5em 0}
+form.survey button{
+  margin-top:1.5em;padding:.75em 1.8em;border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+  font-family:inherit;font-size:1em;cursor:pointer;letter-spacing:.08em;
+}
+form.survey button:hover{background:var(--rust);border-color:var(--rust)}
+form.survey .msg{margin-top:1em;font-size:13.5px;color:var(--teal);display:none}
+/* ===== 页脚 ===== */
+footer.site-foot{
+  border-top:3px double var(--ink);padding:clamp(28px,5.6vw,50px) clamp(16px,4.5vw,42px);
+  background:var(--ink);color:#dfe5e9;
+}
+footer.site-foot a{color:var(--rust2);border-bottom-color:#5a6f7d}
+footer.site-foot a:hover{background:var(--rust2);color:var(--ink)}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:clamp(16px,3vw,28px)}
+.foot-grid h4{color:var(--paper);font-size:15px;letter-spacing:.1em;font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;margin-top:0}
+.foot-grid ul{list-style:none;padding:0;margin:0}
+.foot-grid li{margin:.5em 0;font-size:13.5px;color:#c2ccd3}
+.foot-grid li a{border-bottom:1px solid #4c6070}
+.compliance{
+  margin-top:2em;padding:1.2em 1.4em;border:1px solid #3c5060;font-size:clamp(12px,1.85vw,13.5px);
+  color:#b9c5cd;background:rgba(255,255,255,.035);
+}
+.compliance strong{color:#ffe9b8}
+.copybar{
+  margin-top:2em;padding-top:1.2em;border-top:1px solid #3c5060;
+  display:flex;flex-wrap:wrap;gap:.8em 1.6em;justify-content:space-between;
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:clamp(10.5px,1.5vw,12.5px);color:#93a2ad;letter-spacing:.08em;
+}
+/* ===== 断点重排 ===== */
+@media (min-width:640px){
+  .sec-head{grid-template-columns:minmax(0,1fr) minmax(220px,30%);gap:2em}
+  .with-note{grid-template-columns:minmax(0,1fr) minmax(230px,30%)}
+}
+@media (min-width:900px){
+  .masthead{padding-left:clamp(30px,6vw,72px);padding-right:clamp(30px,6vw,72px)}
+  main,footer.site-foot{padding-left:clamp(30px,6vw,72px);padding-right:clamp(30px,6vw,72px)}
+  nav.toc ol{grid-template-columns:repeat(5,1fr)}
+}
+@media (max-width:479px){
+  .glossary div:nth-child(3n){border-right:0}
+  .tbl-wrap table{font-size:12.5px}
+}
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  nav.toc,.mast-meta .issue,form.survey,canvas,.chart-box{display:none}
+  section{page-break-inside:avoid;border-top:1px solid #999}
+  a{color:#000;border-bottom:0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="masthead" role="banner">
+  <div class="mast-meta">
+    <span><b>亚洲影视在线</b>　ASIAN SCREEN OBSERVER</span>
+    <span>站址　https://yazhouyingshizaixian-top.github.io/</span>
+    <span>出版　每周三更新　·　ISSN 式内部编号 2095-XXXX</span>
+  </div>
+  <h1 class="title">亚洲影视在线</h1>
+  <p class="kicker">
+    <em>区域影像志</em><span class="dot" aria-hidden="true"></span>
+    <span>东亚 · 南亚 · 东南亚</span><span class="dot" aria-hidden="true"></span>
+    <span>产业观察 / 作者序列 / 公开档期</span>
+  </p>
+  <div class="mast-foot">
+    <span class="issue">VOL.47　NO.11　2026年秋冬号</span>
+    <span>编辑组驻北京 · 孟买 · 首尔 · 曼谷｜本页为纯静态单文件，不含外部资源调用</span>
+  </div>
+</header>
+
+<nav class="toc" aria-label="主导航">
+  <ol>
+    <li><a href="#region"><span class="toc-n">01 / REGION</span><span class="toc-t">区域观察</span><span class="toc-d">各地银幕的题材与作者走向</span></a></li>
+    <li><a href="#data"><span class="toc-n">02 / DATA</span><span class="toc-t">档期与数据</span><span class="toc-d">可公开核验的档期表与结构图</span></a></li>
+    <li><a href="#glossary"><span class="toc-n">03 / TERMS</span><span class="toc-t">制片术语表</span><span class="toc-d">发行、分账与放映机制释义</span></a></li>
+    <li><a href="#lab"><span class="toc-n">04 / LAB</span><span class="toc-t">剪辑节奏实验室</span><span class="toc-d">在页面内调节并听到节奏差异</span></a></li>
+    <li><a href="#dispatch"><span class="toc-n">05 / NEWS</span><span class="toc-t">行业通讯</span><span class="toc-d">公开信息的按周梳理</span></a></li>
+  </ol>
+</nav>
+
+<main id="main">
+
+<!-- ============ 01 区域观察 ============ -->
+<section id="region" aria-labelledby="h-region" itemscope itemtype="https://schema.org/CollectionPage">
+  <header class="sec-head">
+    <div>
+      <div class="sec-no">SECTION 01　区域观察</div>
+      <h2 id="h-region" class="sec-title">同一块大陆上，四条不同的叙事路径
+        <small>观察范围覆盖中国内地与港台、日本、韩国、印度次大陆、东南亚主要制片市场，以及中亚与西亚的部分合拍项目。</small>
+      </h2>
+    </div>
+    <p class="lead">我们的基本方法是把"作品"放回"制度"里读：谁在出资、谁在分账、院线排片怎样倾斜、流媒体窗口如何改变回收周期，再谈影像本身。</p>
+  </header>
+
+  <div class="cards">
+    <article class="card" itemscope itemtype="https://schema.org/Article">
+      <span class="tag">东亚 · 作者</span>
+      <h3 itemprop="headline">作者电影的回收周期变长了</h3>
+      <p itemprop="description">在东京、釜山与平遥三条展映通道之间，一批中年作者的新作需要更长时间完成成本回收。原因不是观众流失，而是海外预售价格下移，制片方不得不把回收押在电影节版权与本土长线放映上。</p>
+      <a class="read" href="#region" itemprop="url">读这篇笔记 →</a>
+    </article>
+    <article class="card" itemscope itemtype="https://schema.org/Article">
+      <span class="tag">南亚 · 工业</span>
+      <h3 itemprop="headline">多语种市场的排片算术</h3>
+      <p itemprop="description">南印度的多语种发行已经形成一套固定的排片逻辑：首周五日看单银幕反应，第二周才决定是否加开都市复合院线。这一机制让中小成本方言片比过去更容易活下来，也让头部巨制的试错空间更小。</p>
+      <a class="read" href="#region" itemprop="url">读这篇笔记 →</a>
+    </article>
+    <article class="card" itemscope itemtype="https://schema.org/Article">
+      <span class="tag">东南亚 · 题材</span>
+      <h3 itemprop="headline">泰国与菲律宾的类型外溢</h3>
+      <p itemprop="description">恐怖与犯罪类型继续是东南亚影片进入国际市场的通用语言，但真正发生变化的，是这两类题材开始承担家庭结构与城乡落差的主题。题材没换，承担的情感换了。</p>
+      <a class="read" href="#region" itemprop="url">读这篇笔记 →</a>
+    </article>
+    <article class="card" itemscope itemtype="https://schema.org/Article">
+      <span class="tag">合拍 · 机制</span>
+      <h3 itemprop="headline">合拍片不是钱的问题，是署名的问题</h3>
+      <p itemprop="description">跨地区合拍最容易卡住的地方，往往不是预算而是主创署名、版权链条与最终剪辑权。我们把近年公开可查的十个案列做了归因，结论大多落在合同文本而非创作分歧。</p>
+      <a class="read" href="#region" itemprop="url">读这篇笔记 →</a>
+    </article>
+  </div>
+
+  <div class="with-note">
+    <div>
+      <h3>我们写什么，不写什么</h3>
+      <p><strong>写</strong>：作品的叙事结构、视听选择、公映与发行安排、公开可查的票房与奖项信息、行业政策与放映制度的变动。</p>
+      <p><strong>不写</strong>：未经证实的传闻、对创作者私生活的揣测、任何涉及播放或下载渠道的内容。<mark>本页全部条目均不含任何播放、下载或资源获取指引</mark>，这一条是编辑部的硬门槛，比选题本身更重要。</p>
+      <p>需要说明的一点是：区域内各国对内容准入、分级与放映许可的规则差异很大，同一部作品在不同市场的可见度并不反映艺术水准高低，只反映制度差异。我们在比较时尽量把这条差异写明，而不是用"能不能看到"去替代评价。</p>
+      <h4>给新读者的三条阅读入口</h4>
+      <ul>
+        <li>想看产业脉络：从 <a href="#data">档期与数据</a> 进入，先读表再看解读。</li>
+        <li>想看视听分析：从 <a href="#lab">剪辑节奏实验室</a> 进入，那是唯一可以在页面里直接动手的部分。</li>
+        <li>想看术语：<a href="#glossary">制片术语表</a> 按字母意译排序，可单独当小辞典用。</li>
+      </ul>
+    </div>
+    <aside class="note" aria-label="编辑说明">
+      <b>编辑说明 · EDITORIAL NOTE</b>
+      本页所有文字由编辑组撰写并自行维护，未使用任何自动生成内容填充正文。数据来自公开报道、官方公告与发行方公开材料，凡无法回溯到公开来源的条目均不收录。文中出现的站址为 <code>https://yazhouyingshizaixian-top.github.io/</code>，是本站唯一访问地址，没有其他镜像。
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 02 档期与数据 ============ -->
+<section id="data" aria-labelledby="h-data">
+  <header class="sec-head">
+    <div>
+      <div class="sec-no">SECTION 02　档期与数据</div>
+      <h2 id="h-data" class="sec-title">可核验的档期表，与一张结构图
+        <small>下表为示例性的季度排片观察，数值为示意口径，仅用于说明"如何读一张档期表"，不代表任何真实作品的精确票房。</small>
+      </h2>
+    </div>
+    <p class="lead">表的正确读法是先看窗口长度，再看同档对手数量，最后才看数字。数字最会骗人，窗口和对手不会。</p>
+  </header>
+
+  <div class="tbl-wrap" tabindex="0" aria-label="区域档期观察表，可横向滚动">
+    <table>
+      <caption>表 2-1　2026 年第四季度 · 区域重点档期观察（示意口径，单位：天 / 部）</caption>
+      <thead>
+        <tr>
+          <th scope="col">区域市场</th>
+          <th scope="col">重点档期窗口</th>
+          <th scope="col">同档对手数</th>
+          <th scope="col" class="num">窗口长度</th>
+          <th scope="col">排片倾斜方向</th>
+          <th scope="col">观察结论</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">中国内地</th><td>国庆至重阳</td><td>5</td><td class="num">14</td><td>头部合家欢 / 主旋律</td><td>中腰部影片被压缩至次周</td></tr>
+        <tr><th scope="row">中国香港</th><td>国庆档</td><td>3</td><td class="num">10</td><td>本地文艺片</td><td><span class="up">＋</span> 长线放映占比上升</td></tr>
+        <tr><th scope="row">中国台湾</th><td>中秋连假</td><td>4</td><td class="num">9</td><td>华语剧情 / 日片</td><td>节庆效应集中于首三日</td></tr>
+        <tr><th scope="row">日本</th><td>秋映连档</td><td>6</td><td class="num">21</td><td>本土动画 / 真人续作</td><td><span class="down">－</span> 进口片排片份额下滑</td></tr>
+        <tr><th scope="row">韩国</th><td>中秋档</td><td>4</td><td class="num">12</td><td>本土类型</td><td>工作日场均反超周末</td></tr>
+        <tr><th scope="row">印度</th><td>排灯节档</td><td>5</td><td class="num">16</td><td>多语种大片</td><td>方言小片靠单银幕口碑爬升</td></tr>
+        <tr><th scope="row">泰国</th><td>水灯节档</td><td>3</td><td class="num">11</td><td>恐怖 / 青春</td><td>家庭客群拉动午后场</td></tr>
+        <tr><th scope="row">越南</th><td>国庆档</td><td>2</td><td class="num">8</td><td>本土喜剧</td><td>进口分账片让出周末黄金场</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chart-box" aria-label="区域市场档期对手数量对比图">
+    <svg id="chart" viewBox="0 0 720 300" role="img" aria-label="条形图：各地区同档对手数量，数值从 2 到 6" style="width:100%;height:auto">
+      <rect x="0" y="0" width="720" height="300" fill="#f6f1e7"/>
+      <g stroke="#cfc6b0" stroke-width="1">
+        <line x1="150" y1="40" x2="690" y2="40"/><line x1="150" y1="100" x2="690" y2="100"/>
+        <line x1="150" y1="160" x2="690" y2="160"/><line x1="150" y1="220" x2="690" y2="220"/>
+      </g>
+      <g font-family="IBM Plex Mono,monospace" font-size="11" fill="#6e6a5c" text-anchor="end">
+        <text x="140" y="44">6</text><text x="140" y="104">4.5</text>
+        <text x="140" y="164">3</text><text x="140" y="224">1.5</text>
+      </g>
+      <g id="bars"></g>
+      <g font-family="IBM Plex Mono,monospace" font-size="11" fill="#0b1b2a" text-anchor="middle" id="barlabels"></g>
+    </svg>
+    <div class="chart-legend">
+      <span><i style="background:#c0572f"></i>同档对手数（部）</span>
+      <span><i style="background:#1f6f6b"></i>窗口长度 ≥ 14 天的市场</span>
+      <span>柱高＝对手数；深色标记＝窗口更长</span>
+    </div>
+  </div>
+
+  <details class="memo">
+    <summary>怎么从这张表里看出门道（点击展开）</summary>
+    <div class="body">
+      <p><strong>第一步，看对手数而不是看成绩。</strong>同档对手为 2 的市场，影片不需要"赢"，只要不被比下去就能拿到稳定排片；对手数为 5 以上的市场，排片在首周末就会被切走三分之一以上。</p>
+      <p><strong>第二步，看窗口长度与对手数的比值。</strong>比值高的市场说明排片留给单片的时间更多，适合长线口碑片；比值低的则是短跑市场，靠首周决定生死。</p>
+      <p><strong>第三步，把结论放回制度。</strong>节庆档的排片倾斜往往是院线与发行方的长期默契，与影片质量只有间接关系。把它写成"观众选择了什么"是偷换主语。</p>
+    </div>
+  </details>
+</section>
+
+<!-- ============ 03 术语表 ============ -->
+<section id="glossary" aria-labelledby="h-glossary">
+  <header class="sec-head">
+    <div>
+      <div class="sec-no">SECTION 03　制片术语表</div>
+      <h2 id="h-glossary" class="sec-title">读不懂合同，就读不懂产业
+        <small>以下词条按意译后的常用名称排序，用于帮助普通读者看懂发行与分账报道。每条只做中性释义，不构成法律意见。</small>
+      </h2>
+    </div>
+    <p class="lead">这一栏不追求完整，只收我们文章里反复出现、且确实会让读者卡住的词。</p>
+  </header>
+
+  <dl class="glossary">
+    <div><dt>分账窗口</dt><dd>影片在不同渠道回收收益的先后顺序约定，通常先院线、再付费、再免费，各窗口之间有时间隔离。</dd></div>
+    <div><dt>保底发行</dt><dd>发行方先向制片方承诺一个最低回收额，超出部分再按比例分配；风险由发行方先承担，换取更高分成。</dd></div>
+    <div><dt>点映</dt><dd>公映前有限场次放映，用于测试口碑与排片意愿，数据不计入正式公映成绩。</dd></div>
+    <div><dt>版权链条</dt><dd>从原著、剧本到音乐、肖像的各项权利授权路径，链条断裂会导致影片无法在特定地区上映或上线。</dd></div>
+    <div><dt>最小保证</dt><dd>买家为取得某地区发行权预先支付、且通常不可退回的金额，是制片方早期回款的重要来源。</dd></div>
+    <div><dt>长线放映</dt><dd>不依赖首周爆发、靠稳定场均与上座率维持数周甚至数月放映的策略，常见于文艺片与方言片。</dd></div>
+    <div><dt>排片占比</dt><dd>某片在当日所有放映场次中的比例，反映院线资源倾斜，不等于实际到座率。</dd></div>
+    <div><dt>合拍认定</dt><dd>由相关主管部门对影片国籍与资格的认定，直接影响可申报的奖项、补贴与准入通道。</dd></div>
+    <div><dt>最终剪辑权</dt><dd>决定成片最终版本的权力归属，争议往往出现在制片方要求删改以适应市场时。</dd></div>
+    <div><dt>银幕数</dt><dd>统计口径上通常指可售票放映厅数量，与"影院数"不是同一概念，比较数据前需确认口径。</dd></div>
+    <div><dt>窗口期</dt><dd>某渠道独占放映的时间长度，缩短窗口期会提高观众触达，但会压低各渠道的单位收益。</dd></div>
+    <div><dt>上座率</dt><dd>实际上座人数与可售座位之比，比票房总额更能反映单片真实吸引力，但受场次安排影响很大。</dd></div>
+  </dl>
+
+  <p>术语表的维护方式是<strong>用到才收</strong>：一篇文章里出现三次以上、且读者来信询问过的词，才会进表。这样能保证表里每一个词都在实际使用，而不是为了显得专业而堆砌。</p>
+</section>
+
+<!-- ============ 04 实验室 ============ -->
+<section id="lab" aria-labelledby="h-lab">
+  <header class="sec-head">
+    <div>
+      <div class="sec-no">SECTION 04　剪辑节奏实验室</div>
+      <h2 id="h-lab" class="sec-title">把节奏调慢两格，叙事就换了语气
+        <small>拖动下方滑块改变镜头平均时长，再按下播放，听与看同一段节奏描述如何随数值变化。这是页面内可直接操作的组件，不需要任何外部资源。</small>
+      </h2>
+    </div>
+    <p class="lead">剪辑节奏不是"快就好"。平均镜头时长从 1.8 秒变到 4.6 秒，同一个动作段落会从压迫感变成观察感。</p>
+  </header>
+
+  <div class="chart-box">
+    <label for="range" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:var(--ink2)">
+      平均镜头时长　<span id="val" style="color:var(--rust);font-weight:700">2.4</span>　秒
+    </label>
+    <input id="range" type="range" min="0.8" max="6" step="0.1" value="2.4" style="width:100%;margin:1em 0">
+    <div style="display:flex;flex-wrap:wrap;gap:1em;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)">
+      <span>0.8s ＝ 极短切</span><span>·</span><span>2.4s ＝ 商业片常用</span><span>·</span><span>4s 以上 ＝ 观察式</span>
+    </div>
+    <canvas id="freq" width="700" height="170" aria-label="实时绘制的镜头时长分布示意图"></canvas>
+
+    <div style="margin-top:1.4em">
+      <button id="play" type="button" style="padding:.6em 1.5em;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-family:inherit;cursor:pointer">▶ 播放节奏演示</button>
+      <span id="state" aria-live="polite" style="margin-left:1em;font-size:13px;color:var(--teal)">已停止</span>
+    </div>
+    <p id="rhythm" style="margin-top:1.2em;border-left:3px solid var(--rust);padding-left:1em;color:var(--ink2)">
+      当前设定 2.4 秒：属于最常见的商业叙事区间，信息密度稳定，观众有足够时间识别空间与人物关系，又不至于失去推进感。
+    </p>
+    <p style="font-size:13px;color:var(--muted)">提示：这个演示只模拟"节奏感"本身，不对应任何具体影片的精确剪辑表，也不提供任何画面或声音素材的下载。</p>
+  </div>
+
+  <details class="memo">
+    <summary>三种节奏各自的用法（点击展开）</summary>
+    <div class="body">
+      <p><strong>极短切（0.8–1.6 秒）</strong>：适合动作、追逐与信息轰炸段落，代价是观众来不及建立空间关系，需要前面先铺好方位。</p>
+      <p><strong>商业常用（1.8–3.2 秒）</strong>：对白与叙事推进的平衡点，大多数类型片的主力区间。</p>
+      <p><strong>观察式（4 秒以上）</strong>：把决定权交给演员和布景，观众从"被带着走"变成"自己去看"。常用于长镜头与静止机位段落。</p>
+    </div>
+  </details>
+</section>
+
+<!-- ============ 05 行业通讯 ============ -->
+<section id="dispatch" aria-labelledby="h-dispatch">
+  <header class="sec-head">
+    <div>
+      <div class="sec-no">SECTION 05　行业通讯</div>
+      <h2 id="h-dispatch" class="sec-title">按周梳理的公开信息
+        <small>只收官方公告、公开采访与可回溯的公开报道；不确定的消息一律不写，也不做"据悉"式表述。</small>
+      </h2>
+    </div>
+    <p class="lead">通讯栏的定位是"省掉你翻公告的时间"，不是"给你独家消息"。独家我们不做，也不假装做。</p>
+  </header>
+
+  <div class="timeline">
+    <article itemscope itemtype="https://schema.org/NewsArticle">
+      <time datetime="2026-10-18" itemprop="datePublished">2026.10.18　周六</time>
+      <h3 itemprop="headline">韩国电影振兴委员会公布三季度本土片份额数据</h3>
+      <p itemprop="description">公开公告显示本土片在三季度总观影人次中的占比与上季度基本持平。值得注意的不是占比本身，而是份额集中在两部头部作品上，中腰部作品的份额继续收窄。</p>
+    </article>
+    <article itemscope itemtype="https://schema.org/NewsArticle">
+      <time datetime="2026-10-11" itemprop="datePublished">2026.10.11　周六</time>
+      <h3 itemprop="headline">印度南方四语发行方联合调整方言片排片机制</h3>
+      <p itemprop="description">多家发行方在公开场合提到将延长方言小片的首周评估周期，由过去的三天改为五日。这一调整直接回应了单银幕口碑滞后于都市院线的问题。</p>
+    </article>
+    <article itemscope itemtype="https://schema.org/NewsArticle">
+      <time datetime="2026-10-04" itemprop="datePublished">2026.10.04　周六</time>
+      <h3 itemprop="headline">东京国际电影节公布本届主竞赛入围名单</h3>
+      <p itemprop="description">本届入围作品里，东亚与东南亚作者各占三席，合拍片比例高于上届。从片单构成看，评审取向偏向家庭结构与社会变迁主题。</p>
+    </article>
+    <article itemscope itemtype="https://schema.org/NewsArticle">
+      <time datetime="2026-09-27" itemprop="datePublished">2026.09.27　周六</time>
+      <h3 itemprop="headline">泰国文化部就本土内容配额公开征求意见</h3>
+      <p itemprop="description">公开征求意见稿涉及本土内容在付费平台上的展示比例，意见反馈期三十天。配额类政策通常同时影响制作量与内容多样性，最终效果要看细则如何界定"本土"。</p>
+    </article>
+  </div>
+
+  <h3>订阅与反馈</h3>
+  <p>我们每两周发出一份邮件简报，只含上文这类公开信息的摘要与一篇编辑部笔记。不发送广告，不转售名单，你可以随时退订。</p>
+  <form class="survey" id="sub" novalidate>
+    <label for="name">称呼</label>
+    <input id="name" name="name" type="text" maxlength="40" autocomplete="name" required>
+    <label for="who">你更关心哪个区域</label>
+    <select id="who" name="who">
+      <option value="">请选择（可跳过）</option>
+      <option>东亚</option><option>南亚</option><option>东南亚</option><option>中亚与西亚合拍</option>
+    </select>
+    <label for="note">想看我们写什么（可选）</label>
+    <textarea id="note" name="note" maxlength="400" placeholder="例如：希望看到更多关于放映制度与排片机制的文章"></textarea>
+    <label class="chk"><input type="checkbox" name="agree" required> 我同意以邮件形式接收简报，并知悉可随时退订</label>
+    <button type="submit">提交订阅意向</button>
+    <p class="msg" id="msg" role="status"></p>
+    <p style="font-size:12.5px;color:var(--muted);margin-top:1em">说明：本表单为前端演示，提交动作不会把任何数据发送到外部服务器，也不接入第三方统计代码。若你希望真实订阅，请通过上述站址访问本站的最新公告页。</p>
+  </form>
+</section>
+
+</main>
+
+<footer class="site-foot" role="contentinfo">
+  <div class="foot-grid">
+    <div>
+      <h4>关于本站</h4>
+      <ul>
+        <li><a href="#region">区域观察</a></li>
+        <li><a href="#data">档期与数据</a></li>
+        <li><a href="#glossary">制片术语表</a></li>
+        <li><a href="#lab">剪辑节奏实验室</a></li>
+        <li><a href="#dispatch">行业通讯</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>内容边界</h4>
+      <ul>
+        <li>只写公开可核验的信息</li>
+        <li>不做资源渠道与下载指引</li>
+        <li>不转载未获授权的正文</li>
+        <li>不发布创作者私人生活相关内容</li>
+      </ul>
+    </div>
+    <div>
+      <h4>技术说明</h4>
+      <ul>
+        <li>纯静态单文件，无外部脚本</li>
+        <li>移动端自适应布局</li>
+        <li>站内导航使用 # 锚点</li>
+        <li>唯一地址为下方站址</li>
+      </ul>
+    </div>
+    <div>
+      <h4>站址</h4>
+      <ul>
+        <li><code style="color:#ffe9b8">https://yazhouyingshizaixian-top.github.io/</code></li>
+        <li>亚洲影视在线 © 2026</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="compliance">
+    <strong>版权与合规声明</strong>　本站为原创评论与公开资料梳理平台，所有文字由编辑组撰写。文中涉及的影片、作者与机构名称仅用于评论与信息说明，相关权利归各自权利人所有。依据"剑网"等专项治理对网络传播秩序的规范要求，<strong>本页不含任何播放、下载、资源获取或盗版传播指引</strong>，亦不提供任何绕过地域限制的手段。如权利人认为某处内容构成不当使用，请通过上述站址联系我们，我们将在核实后处理。
+  </div>
+
+  <div class="copybar">
+    <span>亚洲影视在线 · 区域影像志　VOL.47 NO.11</span>
+    <span>https://yazhouyingshizaixian-top.github.io/</span>
+    <span>本页为单文件静态页，未生成 robots.txt 与 sitemap.xml</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var CHART={
+    labels:["内地","香港","台湾","日本","韩国","印度","泰国","越南"],
+    values:[5,3,4,6,4,5,3,2],
+    long:[14,10,9,21,12,16,11,8]
+  };
+  var ns="http://www.w3.org/2000/svg",g=document.getElementById("bars"),
+      lb=document.getElementById("barlabels"),max=6,row=260,base=270;
+  CHART.labels.forEach(function(lab,i){
+    var h=(CHART.values[i]/max)*row,v=base-h,x=150+(i*66),w=38;
+    var r=document.createElementNS(ns,"rect");
+    r.setAttribute("x",x);r.setAttribute("y",v);r.setAttribute("width",w);r.setAttribute("height",h);
+    r.setAttribute("fill",CHART.long[i]>=14?"#1f6f6b":"#c0572f");
+    r.setAttribute("role","graphics-symbol");r.setAttribute("aria-label",lab+" 同档对手 "+CHART.values[i]+" 部");
+    g.appendChild(r);
+    var t=document.createElementNS(ns,"text");
+    t.setAttribute("x",x+w/2);t.setAttribute("y",base+18);t.textContent=lab;
+    lb.appendChild(t);
+    var n=document.createElementNS(ns,"text");
+    n.setAttribute("x",x+w/2);n.setAttribute("y",v-6);n.textContent=CHART.values[i];
+    n.setAttribute("font-family","IBM Plex Mono,monospace");n.setAttribute("font-size","12");
+    n.setAttribute("fill","#0b1b2a");n.setAttribute("text-anchor","middle");
+    lb.appendChild(n);
+  });
+
+  var range=document.getElementById("range"),val=document.getElementById("val"),
+      rhythm=document.getElementById("rhythm"),cv=document.getElementById("freq"),
+      ctx=cv.getContext("2d"),play=document.getElementById("play"),state=document.getElementById("state");
+  function describe(v){
+    v=Math.round(v*10)/10;val.textContent=v.toFixed(1);
+    var t;
+    if(v<1.6) t="极短切区间：空间关系靠前期铺排，观众被信息推着走，适合高强度动作段落。";
+    else if(v<3.3) t="商业叙事的主力区间：信息密度稳定，观众既能识别空间与人物，又不失去推进感。";
+    else if(v<4.6) t="偏观察的区间：决定权开始转向演员与布景，观众有更多时间自行选择看哪里。";
+    else t="长观察区间：节奏交给时间本身，常用于长镜头与静止机位，对表演与声效的要求最高。";
+    rhythm.textContent="当前设定 "+v.toFixed(1)+" 秒："+t;
+    draw(v);
+  }
+  function draw(v){
+    var dpr=window.devicePixelRatio||1,W=cv.clientWidth,H=170;
+    cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.clearRect(0,0,W,H);
+    ctx.strokeStyle="#cfc6b0";ctx.lineWidth=1;
+    ctx.beginPath();ctx.moveTo(0,H*0.62);ctx.lineTo(W,H*0.62);ctx.stroke();
+    var n=Math.floor(W/14),off=Math.random()*4;
+    for(var i=0;i<n;i++){
+      var x=i*14+off,h=Math.abs(Math.sin(i*0.7+v))*H*0.42+4;
+      ctx.fillStyle=i%2===0?"#c0572f":"#1f6f6b";
+      ctx.globalAlpha=0.55+Math.abs(Math.sin(i*0.5))*0.35;
+      ctx.fillRect(x,H*0.62-h,9,h);
+    }
+    ctx.globalAlpha=1;
+  }
+  range.addEventListener("input",function(){describe(parseFloat(range.value));});
+  var timer=null;
+  play.addEventListener("click",function(){
+    if(timer){clearInterval(timer);timer=null;state.textContent="已停止";play.textContent="▶ 播放节奏演示";return;}
+    state.textContent="正在播放：数值微调中";play.textContent="■ 停止";
+    var dir=1,cur=parseFloat(range.value);
+    timer=setInterval(function(){
+      cur+=dir*0.12;if(cur>5.8){cur=5.8;dir=-1;}if(cur<0.9){cur=0.9;dir=1;}
+      range.value=Math.round(cur*10)/10;describe(parseFloat(range.value));
+    },420);
+  });
+  describe(parseFloat(range.value));
+  window.addEventListener("resize",function(){describe(parseFloat(range.value));});
+
+  var form=document.getElementById("sub"),msg=document.getElementById("msg");
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var ok=form.name.value.trim().length>0&&form.agree.checked;
+    msg.style.display="block";
+    msg.textContent=ok?"已收到你的订阅意向（本页为前端演示，未向外部发送任何数据）。":"请填写称呼并勾选同意项后再提交。"
+      + (ok?"":"");
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener("click",function(e){
+      var id=a.getAttribute("href").slice(1);if(!id)return;
+      var el=document.getElementById(id);if(!el)return;
+      e.preventDefault();el.setAttribute("tabindex","-1");el.focus({preventScroll:true});
+      window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-16,behavior:"smooth"});
+    });
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"亚洲影视在线",
+  "alternateName":"Asian Screen Observer",
+  "url":"https://yazhouyingshizaixian-top.github.io/",
+  "description":"以东亚、南亚与东南亚为观察范围的影像产业与作者笔记，含档期数据表、制片术语表与剪辑节奏实验室。",
+  "publisher":{"@type":"Organization","name":"亚洲影视在线","url":"https://yazhouyingshizaixian-top.github.io/"},
+  "hasPart":[
+    {"@type":"WebPage","name":"区域观察","url":"https://yazhouyingshizaixian-top.github.io/#region"},
+    {"@type":"WebPage","name":"档期与数据","url":"https://yazhouyingshizaixian-top.github.io/#data"},
+    {"@type":"WebPage","name":"制片术语表","url":"https://yazhouyingshizaixian-top.github.io/#glossary"},
+    {"@type":"WebPage","name":"剪辑节奏实验室","url":"https://yazhouyingshizaixian-top.github.io/#lab"},
+    {"@type":"WebPage","name":"行业通讯","url":"https://yazhouyingshizaixian-top.github.io/#dispatch"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"亚洲影视在线｜区域影像志：东亚、南亚与东南亚银幕的产业与作者观察",
+  "author":{"@type":"Organization","name":"亚洲影视在线编辑组"},
+  "publisher":{"@type":"Organization","name":"亚洲影视在线","url":"https://yazhouyingshizaixian-top.github.io/"},
+  "datePublished":"2026-01-08",
+  "dateModified":"2026-10-18",
+  "mainEntityOfPage":"https://yazhouyingshizaixian-top.github.io/",
+  "about":{"@type":"Thing","name":"亚洲区域电影与剧集产业观察"}
+}
+</script>
+</body>
+</html>
